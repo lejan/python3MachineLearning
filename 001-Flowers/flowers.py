@@ -17,7 +17,7 @@ from sklearn.svm import SVC
 
 # Load dataset
 # url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
-url = "/home/lejan/programacion/python3/machinelearning/001-Flowers/iris.csv"
+url = "/home/lejan/programacion/python3/python3MachineLearning/001-Flowers/iris.csv"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = read_csv(url, names=names)
 
@@ -32,3 +32,15 @@ print(dataset.describe())
 
 # class distribution
 print(dataset.groupby('class').size())
+
+# box and whisker plots
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+pyplot.show()
+
+# histograms
+dataset.hist()
+pyplot.show()
+
+# scatter plot matrix
+scatter_matrix(dataset)
+pyplot.show()

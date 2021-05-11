@@ -12,4 +12,4 @@ git push -u origin master
 Then just:
 git add .
 git commit -m "Commit"
-git push -u origin master
+git push -u origin master (or just "git push")

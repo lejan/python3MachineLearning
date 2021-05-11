@@ -8,3 +8,8 @@ git commit -m "First commit"
 In github create a new repository and copy the name (example): https://github.com/lejan/newProject.git
 git remote add origin https://github.com/lejan/newProject.git
 git push -u origin master
+
+Then just:
+git add .
+git commit -m "Commit"
+git push -u origin master

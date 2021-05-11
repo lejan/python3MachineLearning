@@ -1,0 +1,10 @@
+mkdir folderProject
+cd folderProject
+git init
+touch README.md
+git add .
+git commit -m "First commit"
+
+In github create a new repository and copy the name (example): https://github.com/lejan/newProject.git
+git remote add origin https://github.com/lejan/newProject.git
+git push -u origin master
